@@ -24,30 +24,35 @@
 }
 
 .aside-trands {
-    .aside-news-card {
+    .trands-news-card {
         a {
-            font-size: 17px;
+            font-size: calcRem(20);
             color: $text-color;
-            line-height: 24px;
-            max-height: 93px;
+            max-height: calcRem(95);
             overflow: hidden;
+            line-height: calcRem(30);
+            display: block;
+
+            &:hover {
+                text-decoration: underline;
+            }
 
             .card-text {
-                @include ellipse-rows(4)
+                @include ellipse-rows(4);
             }
         }
     }
 
     .row {
         >div {
-            .aside-news-card {
+            .trands-news-card {
                 border-bottom: 1px solid #ccc;
                 padding-bottom: 10px;
                 margin-bottom: 10px;
             }
 
             &:last-child {
-                .aside-news-card {
+                .trands-news-card {
                     border-bottom: none;
                     padding-bottom: 0;
                     margin-bottom: 0px;
