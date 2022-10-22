@@ -228,7 +228,7 @@
     .sticky-logo {
         max-width: 0;
         overflow: hidden;
-        transition: 0.3s ease-in-out;
+        transition: 0.3s ease;
         transform: scale(0);
         display: inline-flex;
         align-items: center;
@@ -350,6 +350,12 @@
 
             &:hover {
                 z-index: 3;
+
+                .mega-dropdown-item {
+                    visibility: visible;
+                    max-height: 500px;
+                    transition: 0.5s ease-in-out;
+                }
             }
 
             &:has(.active) {
@@ -433,6 +439,6 @@
                 padding-inline-end: calcRem(24);
             }
         }
-        
+
     }
 }

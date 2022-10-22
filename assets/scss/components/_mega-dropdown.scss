@@ -11,7 +11,12 @@
     margin-top: 0;
     border-radius: unset;
     border-top: 2px solid #666;
-    display: none;
+    // display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    visibility: hidden;
+
 
     .mega-menu-card {
         margin-top: 24px;

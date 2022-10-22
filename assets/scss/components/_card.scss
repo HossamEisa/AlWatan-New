@@ -22,3 +22,36 @@
         transition: 0.3s ease;
     }
 }
+
+.aside-news-card {
+    img {
+        object-fit: cover;
+    }
+
+    a {
+        display: block;
+        color: $text-color;
+        font-size: 18px;
+        font-family: $font-r;
+        font-weight: normal;
+        line-height: 26px;
+
+        @include mq('xxl') {
+            font-size: 20px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .card-image {
+        position: relative;
+    }
+
+    .card-text {
+        margin-top: 8px;
+        transition: 0.3s ease;
+        @include ellipse-rows(3)
+    }
+}

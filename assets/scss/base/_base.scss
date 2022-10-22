@@ -28,8 +28,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   background-color: $white;
+  scroll-behavior: smooth;
+  @extend %scroll;
 
-  // scroll-behavior: smooth;
   &::after {
     content: "";
     position: fixed;
@@ -52,7 +53,6 @@ body {
 
 .container {
   max-width: 100%;
-  // background-color: rgba(0, 0, 0, .2);
 }
 
 @include mq('xl') {
