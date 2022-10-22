@@ -1,7 +1,7 @@
 .news-flag {
     position: absolute;
     top: 0;
-    right: 0;
+    #{$right}: 0;
     background-color: $main-color;
     display: -webkit-box;
     display: -ms-flexbox;

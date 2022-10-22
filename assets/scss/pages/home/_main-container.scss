@@ -1,13 +1,13 @@
 .main-articles-container {
     border-right: 1px solid $dark6;
-    border-left: 1px solid $dark6;
+    border-#{$left}: 1px solid $dark6;
 
     .swiper-button-next {
-        left: 0;
+        #{$left}: 0;
     }
 
     .swiper-button-prev {
-        right: 0;
+        #{$right}: 0;
     }
 
     .swiper-button-next,
@@ -51,7 +51,6 @@
                     border-bottom: none;
                     padding-bottom: 0;
                     margin-bottom: 0px;
-
                 }
             }
         }
