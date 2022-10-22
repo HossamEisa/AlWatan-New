@@ -1,0 +1,22 @@
+// // fonts gona here
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: toggleFont("Watan-Regular", "Watan-Regular");
+  src: toggleFont(url("../fonts/Watan-Regular.ttf"), url("../fonts/Watan-Regular.ttf"));
+}
+
+@font-face {
+  font-family: toggleFont("Watan-Bold", "Watan-Bold");
+  src: toggleFont(url("../fonts/Watan-Bold.ttf"), url("../fonts/Watan-Bold.ttf"));
+}
+
+
+@font-face {
+  font-family: toggleFont( "Watan-Extra-Bold", "Watan-Extra-Bold");
+  src: toggleFont(url("../fonts/Watan-Extra-Bold.ttf"), url("../fonts/Watan-Extra-Bold.ttf"));
+}

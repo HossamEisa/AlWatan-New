@@ -1,0 +1,24 @@
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: .6;
+    border-radius: 0;
+    width: 40px;
+    height: 4px;
+}
+
+.swiper-pagination-bullet-active {
+    background: $white;
+    opacity: 1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 20px;
+
+    @include mq('lg') {
+        bottom: 40px;
+
+    }
+}

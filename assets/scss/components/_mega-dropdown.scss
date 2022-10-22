@@ -1,0 +1,49 @@
+.mega-dropdown-item {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #464749;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0 15px 0;
+    border: unset;
+    margin-top: 0;
+    border-radius: unset;
+    border-top: 2px solid #666;
+    display: none;
+
+    .mega-menu-card {
+        margin-top: 24px;
+
+        img {
+            height: 130px;
+            object-fit: cover;
+
+            @include mq('xxl') {
+                height: 175px;
+            }
+        }
+    }
+
+    .show-more {
+        padding-bottom: 15px;
+
+        a {
+            font-size: calcRem(16);
+            color: $white;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+
+    }
+
+    &.show {
+        z-index: 3;
+    }
+
+}

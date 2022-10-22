@@ -1,0 +1,20 @@
+{
+    "name": "alwatan",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "sass": "sass --watch assets/scss:assets/css --style compressed",
+        "cc": "node tools/commands/create_component.js"
+    },
+    "author": "Link Development",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.2.1",
+        "sass": "^1.55.0",
+        "sass-migrator": "^1.4.0"
+    }
+}

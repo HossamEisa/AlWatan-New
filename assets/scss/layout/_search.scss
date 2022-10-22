@@ -1,0 +1,98 @@
+// Search
+
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100vh;
+    overflow-y: auto;
+    transform-origin: 50% 50%;
+    transform: translate(0%, -100%) matrix(1, 0, 0, 1, 0, 0);
+    z-index: 10;
+
+    &.open {
+        border-radius: 0%;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        width: 100%;
+        background-color: rgba(0, 0, 0, .9);
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -o-display: flex;
+        -ms-display: flex;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .close-search-modal {
+        position: absolute;
+        top: 44px;
+        right: 44px;
+        color: #bed747;
+        opacity: 1;
+        padding: 10px 17px;
+        font-size: calcRem(24);
+        background-color: transparent;
+        border: 0;
+        -webkit-appearance: none;
+
+        &:hover {
+            text-decoration: none;
+            opacity: .75;
+        }
+    }
+
+    .searchform {
+        margin-top: calcRem(70);
+
+        .input-search {
+            color: $white;
+            background: rgba(0, 0, 0, 0);
+            font-size: 60px;
+            text-align: right;
+            border: 0;
+            outline: 0;
+            font-size: 33px;
+            outline-offset: -2px;
+            -webkit-appearance: none;
+            width: 100%;
+            border-bottom: 1px solid #373737;
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+
+        .btn-search {
+            margin-top: 75px;
+            background-color: transparent;
+            border: unset;
+            border: 2px solid #bed747;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: calcRem(32);
+            color: #bed747;
+            line-height: initial;
+            transition: 0.3s ease-in-out;
+            padding: 0px calcRem(80);
+            font-family: $font-b;
+
+            &:hover {
+                background-color: #bed747;
+                color: $black;
+            }
+        }
+
+    }
+
+
+}

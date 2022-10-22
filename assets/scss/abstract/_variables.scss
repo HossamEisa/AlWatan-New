@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//////////////////////////////////////////////
+// Fonts  Vars 
+//////////////////////////////////////////////
+$font-r: toggleFont(Cairo-Regular, Watan-Regular);
+$font-b: toggleFont(Cairo-Bold, Watan-Bold);
+$font-xb: toggleFont(Cairo-Bold, Watan-Extra-Bold);
+
+//Border Raduis 
+
+$border-radius: 6px;
+/*=======================
+    Colors
+=======================*/
+$text-color: #464749;
+$dark6: #aeb0b3;
+
+
+$black : #000000;
+$white : #FFF;
+$primary: #0074BC;
+$ocean: #069;
+$purple: #906;
+$rose : #e51d74;
+
+$main-color: #f37021;
+$danger: #e40613;
+
+
+
+
+/////////////////////////////
+// Social Media Color
+/////////////////////////////
+
+$facebook : #3b5999;
+$messenger : #0084ff;
+$twitter : #55acee;
+$linkedin : #0077B5;
+$skype : #00AFF0;
+$dropbox : #007ee5;
+$wordpress : #21759b;
+$vimeo : #1ab7ea;
+$slideShare : #0077b5;
+$vk : #4c75a3;
+$tumbler : #34465d;
+$yahoo : #410093;
+$gplus : #dd4b39;
+$pinterest : #bd081c;
+$youtube : #cd201f;
+$whatsapp : #25D366;
+$slack : #3aaf85;
+$instagram : #e4405f;
+
+
+
+//  Theme Colors
+$second-color: #bed747;
+$moon-grey: #DEDEDE;
+
+
+
+
+$valid-color: #70B276;
+// Custom colors
+
+
+$light-grey: #F0F6F3;
+$medium-grey: #575757;
+$purple: #C017A2;
+$section-bk: #EEEEEE;

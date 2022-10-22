@@ -1,0 +1,45 @@
+.nav-tabs {
+    border: none;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 20px 0;
+
+    .nav-item {
+        .nav-link {
+            border: none;
+            color: #9A9DA3;
+            font-size: calcRem(14);
+            font-family: $font-b;
+            padding: 0.5rem 0.5rem;
+            margin-bottom: 0;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: $black;
+            }
+
+            @include mq('sm') {
+                padding: 0.5rem 1rem;
+            }
+
+            @include mq('lg') {
+                padding: 0.5rem calcRem(25);
+            }
+
+
+            &.active {
+                color: #19202F;
+            }
+        }
+
+        &:first-child {
+            .nav-link {
+                @include mq('xl') {
+                    padding-#{$left}: 0;
+
+                }
+            }
+        }
+    }
+
+}

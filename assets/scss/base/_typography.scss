@@ -1,0 +1,50 @@
+.text-xxs {
+    font-size: calcRem(10);
+}
+
+.text-xs {
+    font-size: calcRem(12);
+}
+
+.text-sm {
+    font-size: calcRem(14);
+}
+
+.text-md {
+    font-size: calcRem(16);
+}
+
+.text-lg {
+    font-size: calcRem(18);
+}
+
+.text-xl {
+    font-size: calcRem(20);
+}
+
+.text-xxl {
+    font-size: calcRem(22);
+}
+
+.text-xxxl {
+    font-size: calcRem(23);
+}
+
+.font-r {
+    font-family: $font-r;
+}
+
+.font-b {
+    font-family: $font-b;
+}
+
+.font-m {
+    font-family: $font-b;
+}
+
+
+.section-title {
+    font-size: calcRem(36);
+    font-family: $font-b;
+    margin-bottom: calcRem(45);
+}

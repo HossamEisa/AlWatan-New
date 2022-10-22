@@ -1,0 +1,6 @@
+.dropdown-item {
+    padding: calcRem(15) calcRem(10);
+    &.active, &:active {
+        background-color: $main-color;
+    }
+}

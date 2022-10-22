@@ -1,0 +1,24 @@
+.gutters-container {
+    display: none;
+    overflow: hidden;
+
+    @include mq('xl') {
+        display: block;
+    }
+
+    .gutter-bar {
+        width: 160px;
+        height: 600px;
+        position: absolute;
+        top: 100%;
+        background-color: #ccc;
+
+        &.start-side {
+            #{$right}: -160px;
+        }
+
+        &.end-side {
+            #{$left}: -160px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+
+    &.scrolled {
+        opacity: 1;
+
+        &.fade-in {
+            animation: fade-in 1s ease-in-out both;
+        }
+
+        &.fade-in-bottom {
+            animation: fade-in-bottom 1s ease-in-out both;
+        }
+
+        &.slide-left {
+            animation: slide-in-left 1s ease-in-out both;
+        }
+
+        &.slide-right { 
+            animation: slide-in-right 1s ease-in-out both;
+        }
+    }
+}
+
+

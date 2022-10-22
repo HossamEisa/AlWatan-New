@@ -1,0 +1,15 @@
+%scroll {
+  scrollbar-width: thin;
+  scrollbar-color: $main-color $white;
+
+  // /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+  }
+}

@@ -1,0 +1,173 @@
+.banner-countdown-wrapper {
+    .banner-countdown {
+        background: linear-gradient(-30deg, rgba(188, 142, 18, 0.3) 0%, rgba(188, 142, 18, 0.3) 50%, rgba(1, 109, 184, 0.3) 50%, rgba(1, 109, 184, 0.3) 100%);
+        padding: 15px;
+        border-radius: 4px;
+
+        @include mq('md') {
+            padding: 10px 20px 15px;
+        }
+
+        .plant {
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+            background: rgba(255, 255, 255, .1);
+            font-family: "Watan-Extra-Bold", sans-serif;
+            font-size: 27px;
+            color: #546F78;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: calcRem(24);
+
+            @include mq('md') {
+                padding: 0 24px;
+            }
+
+            .animation-span {
+                position: absolute;
+                display: block;
+                transition: 0.5s ease;
+                width: 0;
+                height: 1px;
+                background: $white;
+
+                &:nth-child(1) {
+                    top: 0;
+                    #{$left}: 0;
+                }
+
+                &:nth-child(2) {
+                    top: 0;
+                    #{$left}: 0;
+                    width: 1px;
+                    height: 0;
+                }
+
+                &:nth-child(3) {
+                    bottom: 0;
+                    #{$right}: 0;
+                }
+
+                &:nth-child(4) {
+                    bottom: 0;
+                    #{$right}: 0;
+                }
+            }
+
+            .counter-title {
+                font-size: calcRem(24);
+                text-align: center;
+
+                // @include ellipse-rows(1);
+                @include mq('md') {
+                    font-size: calcRem(32);
+                }
+
+                @include mq('md') {
+                    font-size: calcRem(42);
+                    text-align: $right;
+                }
+            }
+
+            img {
+                width: 100px;
+
+                @include mq('sm') {
+                    width: 160px;
+                }
+
+                @include mq('lg') {
+                    width: 193px;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+                transition: 0.5s;
+                transition-delay: 0.5s;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: rgba(255, 255, 255, .1);
+            }
+
+            &:hover {
+                &::after {
+                    left: 100%;
+                }
+
+                .animation-span {
+                    &:nth-child(1) {
+                        width: 100%;
+                        transform: translateX(100%);
+                    }
+
+                    &:nth-child(2) {
+                        height: 100%;
+                        transform: translateY(100%);
+                    }
+
+                    &:nth-child(3) {
+                        width: 100%;
+                        transform: translateX(-100%);
+                    }
+
+                    &:nth-child(4) {
+                        height: 100%;
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+        }
+
+        ul {
+            padding-right: 0;
+            margin-bottom: 0;
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+
+            li {
+                font-family: "Watan-Extra-Bold", sans-serif;
+                color: #000000;
+                margin-inline-end: 10px;
+                font-size: 16px;
+
+                @include mq('sm') {
+                    font-size: 27px;
+                    margin-inline-end: 20px;
+                }
+
+                span {
+                    color: #77b167;
+                    padding-left: 6px;
+                    font-size: 25px;
+
+                    @include mq('sm') {
+                        font-size: 45px;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}

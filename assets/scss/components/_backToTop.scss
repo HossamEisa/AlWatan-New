@@ -1,0 +1,21 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    #{$right}: 25px;
+    z-index: 20;
+    background-color: $main-color;
+    border: 2px solid $white;
+    // border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: $white;
+    cursor: pointer;
+    animation: movebtn 5s linear infinite;
+    transition: all 0.5s ease-in-out;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-size: calcRem(20);
+}

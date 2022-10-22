@@ -1,0 +1,24 @@
+.mega-menu-card {
+    a {
+        display: block;
+
+        &:hover {
+            .mega-menu-card-text {
+                color: $white;
+            }
+        }
+    }
+
+    &-text {
+        font-family: $font-b;
+        font-size: 16px;
+        color: #aeb0b3;
+        line-height: 26px;
+        text-align: right;
+        margin-top: 8px;
+        max-height: 82px;
+        min-height: 82px;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+}
