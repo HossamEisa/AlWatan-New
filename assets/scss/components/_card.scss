@@ -52,6 +52,8 @@
     .card-text {
         margin-top: 8px;
         transition: 0.3s ease;
-        @include ellipse-rows(3)
+        @include ellipse-rows(3);
+        line-height: 29px;
+
     }
 }

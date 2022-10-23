@@ -2,6 +2,15 @@
     border-right: 1px solid $dark6;
     border-#{$left}: 1px solid $dark6;
 
+    .main-acticle-title {
+        font-family: Watan-Extra-Bold, sans-serif;
+        font-size: 24px;
+        color: #464749;
+        line-height: 34px;
+        margin-top: 12px;
+        max-height: 70px;
+    }
+
     .swiper-button-next {
         #{$left}: 0;
     }
@@ -21,17 +30,28 @@
             display: none;
         }
     }
+
+
 }
 
 .aside-trands {
     .trands-news-card {
         a {
-            font-size: calcRem(20);
+            font-size: calcRem(17);
             color: $text-color;
             max-height: calcRem(95);
             overflow: hidden;
             line-height: calcRem(30);
             display: block;
+
+            @include mq('xxl') {
+                font-size: calcRem(18);
+            }
+
+            img {
+                width: calcRem(92);
+                height: calcRem(92);
+            }
 
             &:hover {
                 text-decoration: underline;
@@ -47,8 +67,13 @@
         >div {
             .trands-news-card {
                 border-bottom: 1px solid #ccc;
-                padding-bottom: 10px;
-                margin-bottom: 10px;
+                padding-bottom: 7px;
+                margin-bottom: 7px;
+
+                @include mq('xxl') {
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                }
             }
 
             &:last-child {
@@ -56,6 +81,14 @@
                     border-bottom: none;
                     padding-bottom: 0;
                     margin-bottom: 0px;
+                }
+            }
+
+            &:nth-child(5) {
+                display: none;
+
+                @include mq('xxl') {
+                    display: block;
                 }
             }
         }

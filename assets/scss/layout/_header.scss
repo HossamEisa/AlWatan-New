@@ -77,7 +77,7 @@
                             height: auto;
                         }
 
-                        @include mq('xxl') {
+                        @include mq('xxxl') {
                             width: 191px;
                             height: 111px;
                         }
@@ -146,11 +146,10 @@
                 border-radius: 50%;
                 transition: 0.4s ease-in-out;
 
-                @include mq('xxl') {
+                @include mq('xxxl') {
                     max-width: calcRem(58);
                     max-height: calcRem(58);
                 }
-
 
                 img {
                     object-fit: cover;
@@ -290,9 +289,11 @@
                 }
 
                 @include mq('xxl') {
-                    padding: 0.6rem .6rem;
+                    padding: 0.6rem .4rem;
                 }
-
+                @include mq('xxxl') {
+                    padding: 0.6rem;
+                }
                 &.mega-dropdown-link {
                     &:focus {
                         background-color: var(--main-color);
