@@ -5,7 +5,7 @@
         display: flex;
 
         .title {
-            font-family: Watan-Regular, sans-serif;
+            font-family: $font-r;
             font-size: 20px;
             color: $text-color;
             line-height: 30px;
@@ -39,6 +39,7 @@
         }
     }
 
+    // image card
     .side-image {
         overflow: hidden;
         margin: 3px;
