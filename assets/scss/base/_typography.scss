@@ -54,14 +54,14 @@
     margin-bottom: 15px;
 
     .main-section-title {
-        font-family: $font-b;
+        font-family: $font-xb;
         font-size: calcRem(25);
         color: $dark5;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         border-top: 4px solid $main-color;
-        padding-top: calcRem(25);
+        padding-top: calcRem(15);
 
         @include mq('lg') {
             font-size: calcRem(35);
