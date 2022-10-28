@@ -1,0 +1,64 @@
+.watan-writer {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4f4;
+
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        background-color: #414143;
+        padding: 60px 10px;
+        color: $white;
+        height: 80%;
+        width: 20px;
+        margin: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        #{$left}: 0;
+    }
+
+    .swiper-button-prev {
+        #{$right}: 0;
+    }
+
+
+    .writer-content {
+        border-top: 3px solid $main-color;
+
+        .title {
+            font-family: $font-xb;
+            font-size: calcRem(18);
+            color: $black;
+            line-height: 28px;
+            @include ellipse-rows(2)
+        }
+
+        .author-name {
+            color: $black;
+            font-size: calcRem(18);
+            text-align: $left;
+            margin-top: 10px;
+        }
+    }
+
+
+}

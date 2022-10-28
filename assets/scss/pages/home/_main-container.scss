@@ -3,12 +3,12 @@
     border-#{$left}: 1px solid $dark6;
 
     .main-acticle-title {
-        font-family: Watan-Extra-Bold, sans-serif;
+        font-family: $font-xb;
         font-size: 24px;
-        color: #464749;
+        color: $text-color;
         line-height: 34px;
         margin-top: 12px;
-        max-height: 70px;
+        @include ellipse-rows(2)
     }
 
     .swiper-button-next {

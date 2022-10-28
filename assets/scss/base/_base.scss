@@ -13,6 +13,8 @@
 
 :root {
   font-size: 19px;
+  --mainColor: #fc7700;
+  --purple: #906;
 
   @include mq('xxl') {
     font-size: 20px;

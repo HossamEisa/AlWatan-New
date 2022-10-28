@@ -43,37 +43,3 @@
 }
 
 
-.section-title {
-    font-size: calcRem(36);
-    font-family: $font-b;
-    margin-bottom: calcRem(45);
-}
-
-.main-section-title-wrapper {
-    border-top: 1px solid $dark7;
-    margin-bottom: 15px;
-
-    .main-section-title {
-        font-family: $font-xb;
-        font-size: calcRem(25);
-        color: $dark5;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        border-top: 4px solid $main-color;
-        padding-top: calcRem(15);
-
-        @include mq('lg') {
-            font-size: calcRem(35);
-        }
-
-        i {
-            color: $main-color;
-            display: inline-flex;
-            font-size: calcRem(28);
-            margin-inline-start: 10px;
-
-        }
-    }
-
-}

@@ -213,11 +213,6 @@
     width: 100%;
     background-color: $text-color;
 
-    @include mq('lg') {
-        position: sticky;
-        top: 0;
-    }
-
     .navbar-toggler {
         &:focus {
             box-shadow: none;

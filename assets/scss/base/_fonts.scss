@@ -25,3 +25,16 @@
   font-family: "HelveticaNeue-UltraLight";
   src: url("../fonts/HelveticaNeue-UltraLight.otf");
 }
+
+@font-face {
+  font-family: "alwatan-icon";
+  src: url("../fonts/Watan-Icons.ttf");
+}
+
+.alwatan-icon {
+  font-family: "alwatan-icon";
+  font-size: 18px;
+  font-style: unset;
+  line-height: unset;
+  color: #fc7700;
+}

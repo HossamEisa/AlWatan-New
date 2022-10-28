@@ -135,6 +135,48 @@ var newsCarousel = new Swiper(".main-news-carousel .swiper", {
     },
 });
 
+
+
+var writerCarousel = new Swiper(".watan-writer-carousel", {
+    speed: 1000,
+    spaceBetween: 20,
+    slidesPerView: 1.3,
+    navigation: {
+        nextEl: ".watan-writer .swiper-button-next",
+        prevEl: ".watan-writer .swiper-button-prev",
+    },
+    breakpoints: {
+    
+        // when window width is >= 480px
+        420: {
+            slidesPerView: 2,
+        },
+        520: {
+            slidesPerView: 3,
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 6,
+        }
+    }
+});
+// document.querySelectorAll('.side-image, .popular-news-counter-card').forEach(function (item) {
+//     item.onmouseover = (event) => {
+//         let dataImage = item.getAttribute('data-image');
+//         let dataText = item.getAttribute('data-text');
+//         item.classList.add('active');
+//         document.querySelector('[data-image="' + dataText + '"]', '[data-text="' + dataImage + '"]').classList.add("active");
+//     };
+//     item.onmouseleave = (event) => {
+//         let dataImage = item.getAttribute('data-image');
+//         let dataText = item.getAttribute('data-text');
+//         item.classList.remove('active');
+//         document.querySelector('[data-text="' + dataImage + '"]', '[data-image="' + dataText + '"]').classList.remove("active");
+//     };
+// });
 (function ($) {
     $(".popular-news-counter-card, .side-image").hover(function () {
         let itemNum = $(this).data('text');

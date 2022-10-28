@@ -31,10 +31,14 @@
     a {
         display: block;
         color: $text-color;
-        font-size: 18px;
+        font-size: 17.5px;
         font-family: $font-r;
         font-weight: normal;
         line-height: 26px;
+
+        @include mq('lg') {
+            font-size: 18px;
+        }
 
         @include mq('xxl') {
             font-size: 20px;
@@ -49,11 +53,26 @@
         position: relative;
     }
 
+
     .card-text {
         margin-top: 8px;
         transition: 0.3s ease;
+        line-height: 30px;
+        font-size: calcRem(19);
         @include ellipse-rows(3);
-        line-height: 29px;
 
+        @include mq('md') {
+            font-size: calcRem(17);
+            line-height: 20px;
+        }
+
+        @include mq('xxl') {
+            font-size: calcRem(20);
+            line-height: 30px;
+        }
+
+        &.two-lines {
+            @include ellipse-rows(2);
+        }
     }
 }
