@@ -1,45 +1,60 @@
-.nav-tabs {
+.custom-tabs {
     border: none;
-    border-top: 1px solid #DEDEDE;
-    border-bottom: 1px solid #DEDEDE;
-    padding: 20px 0;
+    padding: 0;
 
     .nav-item {
+        border-top: 5px solid #7f8386;
+        transition: 0.3s ease-in-out;
+
         .nav-link {
             border: none;
-            color: #9A9DA3;
-            font-size: calcRem(14);
-            font-family: $font-b;
+            font-size: calcRem(24);
+            font-family: $font-xb;
             padding: 0.5rem 0.5rem;
             margin-bottom: 0;
             transition: 0.3s ease;
+            color: #7f8386;
+            text-align: center;
+            margin-top: 12px;
+            transition: 0.3s ease-in-out;
+
+            @include mq('lg') {
+                font-size: calcRem(26);
+            }
+
 
             &:hover {
-                color: $black;
+                color: $white;
             }
 
             @include mq('sm') {
                 padding: 0.5rem 1rem;
+                font-size: calcRem(30);
             }
 
             @include mq('lg') {
-                padding: 0.5rem calcRem(25);
+                padding: 0.5rem calcRem(35);
             }
 
 
             &.active {
-                color: #19202F;
+                color: $main-color;
+                background: none;
             }
         }
 
-        &:first-child {
-            .nav-link {
-                @include mq('xl') {
-                    padding-#{$left}: 0;
-
-                }
-            }
+        &:has(.active) {
+            border-color: $main-color
         }
     }
 
+}
+
+
+.custom-tabs-content {
+    padding-top: calcRem(20);
+
+    @include mq('lg') {
+        padding-top: calcRem(30);
+    }
 }

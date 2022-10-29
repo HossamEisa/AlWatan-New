@@ -13,10 +13,7 @@ const btnVisibility = () => {
 ///////////////////////////////
 //Start Header SticyClass
 ///////////////////////////////
-
 const headerSelect = document.querySelector(".header");
-const headerNavBarItems = document.querySelectorAll(".sticky-header .nav-item");
-const headerMenuLink = document.querySelectorAll(".mega-dropdown-link");
 const mainWrapper = document.querySelector(".main");
 const headerSticyClass = document.querySelector(".sticky-header");
 var style = window.getComputedStyle(headerSticyClass, null);
@@ -25,11 +22,9 @@ const headerSticky = () => {
     if (window.scrollY > mainWrapper.offsetTop - 40) {
         headerSticyClass.classList.add('sticked');
         headerSelect.style.paddingBottom = style.getPropertyValue("height");
-
     } else {
         headerSticyClass.classList.remove('sticked');
         headerSelect.style.paddingBottom = 0;
-
     }
 }
 
@@ -37,7 +32,6 @@ const headerSticky = () => {
 ///////////////////////@#@$@#//////////////////////////////
 //End Header SticyClass
 ///////////////////////@#@$@#//////////////////////////////
-
 
 document.addEventListener("scroll", () => {
     btnVisibility();
@@ -51,11 +45,9 @@ scrollBtnX.addEventListener("click", () => {
     });
 });
 
-
 ///////////////////////@#@$@#//////////////////////////////
 // Open Search Modal  & Close
 ///////////////////////@#@$@#//////////////////////////////
-
 
 document.querySelector('.close-search-modal').addEventListener("click", () => {
     document.querySelector('.search-modal').classList.remove('open');
@@ -103,7 +95,6 @@ document.querySelectorAll('.open-search-modal').forEach(item => {
 
             const now = new Date().getTime(),
                 distance = countDown - now;
-
             document.getElementById("days").innerText = Math.floor(distance / (day)),
                 document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
                 document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
@@ -118,8 +109,6 @@ document.querySelectorAll('.open-search-modal').forEach(item => {
             }
             //seconds
         }, 0);
-
-
 }());
 
 // Swiper Init
@@ -146,15 +135,12 @@ var writerCarousel = new Swiper(".watan-writer-carousel", {
         prevEl: ".watan-writer .swiper-button-prev",
     },
     breakpoints: {
-    
-        // when window width is >= 480px
         420: {
             slidesPerView: 2,
         },
         520: {
             slidesPerView: 3,
         },
-        // when window width is >= 640px
         768: {
             slidesPerView: 4,
         },
@@ -163,6 +149,58 @@ var writerCarousel = new Swiper(".watan-writer-carousel", {
         }
     }
 });
+
+// Video Carousel
+
+var videoSwiperThumbs = new Swiper(".video-slide-tabs-thumbs", {
+    spaceBetween: 0,
+    freeMode: true,
+    watchSlidesProgress: true,
+    slidesPerView: 4,
+    preventClicks: false,
+    speed: 500,
+    breakpoints: {
+        520: {
+            spaceBetween: 10,
+        },
+        992: {
+            direction: 'vertical',
+        }
+    }
+
+});
+var videoSwiper = new Swiper(".main-video-slide", {
+    spaceBetween: 10,
+    speed: 500,
+    thumbs: {
+        swiper: videoSwiperThumbs,
+    },
+});
+
+// Albums Carousel
+
+var albumSwiperThumbs = new Swiper(".album-gallery-thumbs", {
+    spaceBetween: 0,
+    freeMode: true,
+    watchSlidesProgress: true,
+    slidesPerView: 4,
+    // preventClicks: false,
+    speed: 1000,
+
+});
+var albumSwiper = new Swiper(".album-gallery-carousel", {
+    spaceBetween: 10,
+    effect: 'fade',
+    speed: 1000,
+    fadeEffect: {
+      crossFade: true
+    },
+    thumbs: {
+        swiper: albumSwiperThumbs,
+    },
+});
+
+
 // document.querySelectorAll('.side-image, .popular-news-counter-card').forEach(function (item) {
 //     item.onmouseover = (event) => {
 //         let dataImage = item.getAttribute('data-image');
