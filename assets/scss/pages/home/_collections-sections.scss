@@ -1,0 +1,15 @@
+.collections-sections {
+    .news-center-main-title {
+        @include mq('lg') {
+            font-size: 20px;
+        }
+    }
+
+    .news-center-main-title {
+        min-height: 60px;
+    }
+
+    .aside-news-card .card-text {
+        @include ellipse-rows(4);
+    }
+}

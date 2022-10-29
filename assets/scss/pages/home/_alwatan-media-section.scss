@@ -3,14 +3,27 @@
     padding-bottom: calcRem(25);
 
 
-    img {
-        object-fit: cover;
-    }
-
     .main-video-slide {
         a {
             position: relative;
             display: block;
+
+            img {
+                object-fit: cover;
+                height: 250px;
+
+                @include mq('sm') {
+                    height: 350px;
+                }
+
+                @include mq('md') {
+                    height: 450px;
+                }
+
+                @include mq('lg') {
+                    height: 540px;
+                }
+            }
 
             &::after {
                 content: "\f04b";
@@ -184,7 +197,6 @@
 
                 @include mq('lg') {
                     padding: 10px calcRem(30);
-                    padding: 10px;
                 }
 
                 @supports (-webkit-backdrop-filter:none) or (backdrop-filter:none) {
@@ -196,7 +208,6 @@
                 img {
                     height: 60px;
                     object-fit: cover;
-                    padding: 4px;
                     border-radius: 4px;
 
                     @include mq('sm') {
@@ -204,12 +215,20 @@
                     }
 
                     @include mq('md') {
-                        padding: 8px;
                         height: 100px;
+                    }
+
+                    @include mq('md') {
+                        height: 110px;
                     }
                 }
 
                 .swiper-slide {
+                    padding: 4px;
+
+                    @include mq('xl') {
+                        padding: 8px;
+                    }
 
                     &.swiper-slide-thumb-active {
                         border-radius: 4px;

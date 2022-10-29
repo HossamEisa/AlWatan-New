@@ -14,7 +14,12 @@
 :root {
   font-size: 19px;
   --mainColor: #fc7700;
-  --purple: #906;
+  --purpleColor: #906;
+  --greenColor: #5c7f2d;
+  --goldColor: #D59704 ;
+  --persianGreen: #00A988 ;
+  --crimson: #e40613 ;
+  --ocean:  #069;
 
   @include mq('xxl') {
     font-size: 20px;
